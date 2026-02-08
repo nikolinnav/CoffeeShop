@@ -1,0 +1,102 @@
+{
+    "coffee": [
+        {
+            "name": "Americano",
+            "price": "45kr"
+        },
+        {
+            "name": "Espresso",
+            "price": "30kr"
+        },
+        {
+            "name": "Cappucino",
+            "price": "50kr"
+        },
+        {
+            "name": "Latte",
+            "price": "50kr"
+        },
+        {
+            "name": "Macchiato",
+            "price": "42kr"
+        },
+        {
+            "name": "Black Coffee",
+            "price": "25kr"
+        }
+    ],
+    "hot_drinks": [
+        {
+            "name": "Hot Chocolate",
+            "price": "55kr"
+        },
+        {
+            "name": "Green Tea Latte",
+            "price": "45kr"
+        },
+        {
+            "name": "Chai Latte",
+            "price": "48kr"
+        },
+        {
+            "name": "Caramel Latte",
+            "price": "48kr"
+        },
+        {
+            "name": "Vanilla Latte",
+            "price": "45kr"
+        },
+        {
+            "name": "Matcha",
+            "price": "50kr"
+        }
+    ],
+    "savory": [
+        {
+            "name": "Avocado Toast",
+            "price": "75kr"
+        },
+        {
+            "name": "Grilled Cheese on Sourdough",
+            "price": "85kr"
+        },
+        {
+            "name": "Ham & Cheese Croissant",
+            "price": "65kr"
+        },
+        {
+            "name": "Spinach & Feta Pastry",
+            "price": "45kr"
+        },
+        {
+            "name": "Chicken & Pesto Panini",
+            "price": "98kr"
+        },
+        {
+            "name": "Caprese Sandwich",
+            "price": "85kr"
+        }
+    ],
+    "sweet": [
+        {
+            "name": "Cinnamon Bun",
+            "price": "45kr"
+        },
+        {
+            "name": "Cardamom Bun",
+            "price": "48kr"
+        },
+        {
+            "name": "Chocolate Brownie",
+            "price": "50kr"
+        },
+        {
+            "name": "Almond Croissant",
+            "price": "55kr"
+        },
+        {
+            "name": "Blueberry Pie",
+            "price": "50kr"
+        }
+    ]
+}
