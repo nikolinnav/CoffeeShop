@@ -42,3 +42,34 @@ body {
 }
 
 
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    position: sticky;
+    top: 0;
+}
+
+header>h3,
+a {
+    color: var(--text-secondary);
+}
+
+header>h3 {
+    font-family: "Playfair-Display-MediumItalic";
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Inter-Thin";
+}
+
+nav {
+    display: flex;
+    gap: 2.5rem;
+}
