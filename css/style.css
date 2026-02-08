@@ -1,0 +1,44 @@
+/* 1. Color variables */
+:root {
+    --base-color: #EBE7E4;
+    --primary-color: #DBCAC0;
+    --secondary-color: #BC9474;
+    --text-primary: #282828;
+    --text-secondary: #FFFCEC;
+}
+
+/* 2. Font-faces */
+@font-face {
+    font-family: Playfair-Display-Regular;
+    src: url(../media/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Playfair-Display-MediumItalic;
+    src: url(../media/fonts/Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../media/fonts/Inter//static/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter-ExtraLight;
+    src: url(../media/fonts/Inter/static/Inter_18pt-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Inter-Thin;
+    src: url(../media/fonts/Inter/static/Inter_18pt-Thin.ttf);
+}
+
+/* 3. Global styles */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--base-color);
+    font-family: "Inter-Regular";
+}
+
+
