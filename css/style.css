@@ -2,6 +2,7 @@
 :root {
     --base-color: #EBE7E4;
     --primary-color: #DBCAC0;
+    --primary-color-transparent: #dbcac042;
     --secondary-color: #BC9474;
     --text-primary: #282828;
     --text-secondary: #FFFCEC;
@@ -39,10 +40,14 @@ body {
     box-sizing: border-box;
     background-color: var(--base-color);
     font-family: "Inter-Regular";
+    color: var(--text-primary);
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
-/* Header */
+/* 4. Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -50,8 +55,20 @@ header {
     margin: 0 2rem;
     padding: 1rem 2rem;
     border-radius: 30px;
-    position: sticky;
-    top: 0;
+
+    background-color: var(--primary-color-transparent);
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.sticky {
+    position: fixed;
+    top: 1rem;
+    min-width: 87%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    background-color: rgba(40, 40, 40, 0.345);
 }
 
 header>h3,
@@ -72,4 +89,42 @@ a {
 nav {
     display: flex;
     gap: 2.5rem;
+}
+
+/* 5. Hero Section */
+#hero {
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../media/images/hero-section.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero>h1 {
+    font-family: "Playfair-Display-Regular";
+    color: var(--text-secondary);
+    padding-top: 5rem;
+    margin-bottom: 0;
+}
+
+#hero>p {
+    font-family: "Inter-Regular";
+    color: var(--text-secondary);
+    justify-self: center;
+    max-width: 30rem;
+    margin-bottom: 3rem;
+}
+
+#hero>a {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    max-width: fit-content;
+    transition: background-color 0.6s ease;
+}
+
+#hero>a:hover {
+    background-color: #ae8768;
 }
