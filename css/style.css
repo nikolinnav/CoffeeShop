@@ -128,3 +128,39 @@ nav {
 #hero>a:hover {
     background-color: #ae8768;
 }
+
+/* 6. Our Story - section */
+
+#story {
+    display: flex;
+    align-items: center;
+    padding: 6rem 0;
+    margin: 0 10rem;
+    justify-content: space-evenly;
+}
+
+#story>p {
+    max-width: 40%;
+    text-align: center;
+}
+
+article {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+article>img:first-child,
+article>img:last-child {
+    height: 350px;
+    width: 120px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+article>img:nth-child(2) {
+    height: 400px;
+    width: 150px;
+    border-radius: 30px;
+    object-fit: cover;
+}
