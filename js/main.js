@@ -25,7 +25,7 @@ function renderMenu(menu) {
         section.classList.add("category");
 
         //title
-        const title = document.createElement("h2");
+        const title = document.createElement("h3");
         title.textContent = formatTitle(category);
         section.appendChild(title);
 

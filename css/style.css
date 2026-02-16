@@ -61,7 +61,6 @@ header {
     margin: 0 2rem;
     padding: 1rem 2rem;
     border-radius: 30px;
-
     background-color: var(--primary-color-transparent);
     backdrop-filter: blur(5px);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -135,14 +134,62 @@ nav {
     background-color: #ae8768;
 }
 
-#menu,
-#story,
+#story-section,
 #contact {
     margin: 0 10rem;
     padding-top: 6rem;
 }
 
 /* 6. Menu */
+#menu-section {
+    padding: 6rem 13rem 0 13rem;
+    color: #5b402b;
+    ;
+    background: linear-gradient(rgba(235, 231, 228, 0.6), rgba(235, 231, 228, 0.6)),
+        url("../media/images/menu-background.jpg") no-repeat center center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#menu-section h1 {
+    font-family: "Playfair-Display-MediumItalic";
+    margin-bottom: 0;
+}
+
+#menu-section p {
+    margin-top: .5em;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: .5rem;
+    text-align: left;
+
+}
+
+.category:first-child {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#menu li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted;
+}
+
+li p {
+    margin-bottom: 0;
+    font-size: 0.8em;
+}
+
+#menu h2 {
+    margin-top: 0;
+}
 
 /* 7. Our Story - section */
 
@@ -150,6 +197,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+#story-section>h1 {
+    text-align: center;
+    font-family: "Playfair-Display-MediumItalic";
 }
 
 #story>p {
@@ -188,7 +240,6 @@ ul {
 
 li {
     margin-bottom: 2rem;
-    font-size: larger;
 }
 
 i {
