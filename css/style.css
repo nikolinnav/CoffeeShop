@@ -142,7 +142,9 @@ nav {
     padding-top: 6rem;
 }
 
-/* 6. Our Story - section */
+/* 6. Menu */
+
+/* 7. Our Story - section */
 
 #story {
     display: flex;
@@ -176,7 +178,7 @@ article>img:nth-child(2) {
     object-fit: cover;
 }
 
-/* 7. Contact section */
+/* 8. Contact section */
 
 ul {
     list-style: none;
@@ -253,4 +255,30 @@ button {
 
 button:hover {
     background-color: #ae8768;
+}
+
+/* 9. Footer */
+
+footer {
+    margin-top: 6rem;
+    padding: 1rem 5rem 0.5rem 5rem;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    text-align: center;
+}
+
+footer>p:first-child {
+    font-family: "Playfair-Display-MediumItalic";
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+footer>p:last-child,
+footer>p:first-child {
+    margin-bottom: 0;
+}
+
+footer>p:last-child {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
 }
