@@ -3,10 +3,18 @@ const header = document.querySelector("header");
 const hero = document.getElementById("hero");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY >= hero.offsetHeight)
+    if (window.scrollY >= hero.offsetHeight) {
         header.classList.add("sticky")
-    else
+        if (window.innerWidth <= 790)
+            header.classList.add("header-mobile")
+        else
+            header.classList.remove("header-mobile")
+    }
+    else {
         header.classList.remove("sticky")
+        header.classList.remove("header-mobile")
+    }
+
 });
 
 

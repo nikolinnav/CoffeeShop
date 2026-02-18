@@ -74,7 +74,10 @@ header.sticky {
     transform: translateX(-50%);
     margin: 0;
     background-color: rgba(40, 40, 40, 0.345);
+    z-index: 1000;
 }
+
+
 
 header>h3,
 a {
@@ -94,6 +97,27 @@ a {
 nav {
     display: flex;
     gap: 2.5rem;
+}
+
+nav a {
+    display: inline-block;
+}
+
+.hamburger {
+    display: none;
+    height: 45px;
+    width: 45px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--text-secondary);
+    margin: 5px 0;
 }
 
 /* 5. Hero Section */
@@ -324,7 +348,7 @@ textarea {
     min-height: 120px;
 }
 
-button {
+.btn-submit {
     padding: 0.75rem;
     background-color: var(--secondary-color);
     color: var(--text-secondary);
@@ -335,7 +359,7 @@ button {
     flex: 1;
 }
 
-button:hover {
+.btn-submit:hover {
     background-color: #ae8768;
 }
 
@@ -366,6 +390,45 @@ footer>p:last-child {
 }
 
 @media(max-width:790px) {
+
+    nav a {
+        display: none;
+    }
+
+    header {
+        margin: 0;
+        padding: .2rem 2rem;
+    }
+
+    header.header-mobile h3 {
+        display: none;
+    }
+
+    header.header-mobile {
+        display: inline-block;
+        width: auto;
+        min-width: unset;
+        left: 90%;
+        padding: 0;
+        border-radius: 50%;
+        background-color: var(--secondary-color);
+    }
+
+    .hamburger {
+        display: inline-block;
+        padding: 0.5rem;
+    }
+
+    .hamburger span {
+        margin: 5px auto;
+    }
+
+
+
+
+
+
+
     #menu {
         grid-template-columns: 1fr;
     }
