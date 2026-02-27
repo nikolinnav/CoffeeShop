@@ -76,11 +76,13 @@ const navItems = document.querySelectorAll("nav a");
 
 hamburger.addEventListener("click", () => {
     nav.classList.toggle("nav-open");
+    hamburger.classList.toggle("active");
 });
 
 navItems.forEach(item => {
     item.addEventListener("click", () => {
         nav.classList.remove("nav-open");
+        hamburger.classList.remove("active");
     });
 });
 
