@@ -425,7 +425,11 @@ footer>p:last-child {
 
 
 
-
+    #story-section h1,
+    #menu-section h1,
+    #contact h1 {
+        font-size: 1.5rem;
+    }
 
 
 
@@ -444,7 +448,7 @@ footer>p:last-child {
     }
 
     #contact li {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     #contact li:last-child {
@@ -469,6 +473,19 @@ footer>p:last-child {
     #contact {
         align-items: center;
         gap: 0.5rem;
+    }
+
+    footer {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        margin-top: 4rem;
+    }
+
+    footer p:first-child {
+        font-size: 1.2rem;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 0.8rem;
     }
 
 }
