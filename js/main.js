@@ -5,14 +5,19 @@ const hero = document.getElementById("hero");
 window.addEventListener("scroll", () => {
     if (window.scrollY >= hero.offsetHeight) {
         header.classList.add("sticky")
-        if (window.innerWidth <= 790)
+        if (window.innerWidth <= 790) {
             header.classList.add("header-mobile")
-        else
+            nav.classList.add("nav-background")
+        }
+        else {
             header.classList.remove("header-mobile")
+            nav.classList.remove("nav-background")
+        }
     }
     else {
         header.classList.remove("sticky")
         header.classList.remove("header-mobile")
+        nav.classList.remove("nav-background")
     }
 
 });
@@ -63,3 +68,19 @@ function formatTitle(text) {
         .replace("_", " ")
         .replace(/\b\w/g, letter => letter.toUpperCase());
 }
+
+// Toggle menu display on mobile
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector("nav");
+const navItems = document.querySelectorAll("nav a");
+
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("nav-open");
+});
+
+navItems.forEach(item => {
+    item.addEventListener("click", () => {
+        nav.classList.remove("nav-open");
+    });
+});
+
