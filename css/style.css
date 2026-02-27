@@ -129,7 +129,7 @@ nav a {
 #hero {
     min-height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../media/images/hero-section.jpg") no-repeat center center;
+        url("../media/images/hero-section.webp") no-repeat center center;
     background-size: cover;
     padding: 1rem 2rem;
     display: flex;
@@ -245,31 +245,13 @@ li p {
     text-align: center;
 }
 
-/* article {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-} */
-
 article img {
     width: 100%;
-    height: auto;
     border-radius: 30px;
     object-fit: cover;
+    aspect-ratio: 1/1;
+    content-visibility: auto;
 }
-
-/* article>img:first-child,
-article>img:last-child {
-    height: 350px;
-    width: 120px;
-
-}
-
-article>img:nth-child(2) {
-    height: 400px;
-    width: 150px;
-
-} */
 
 article {
     display: grid;
