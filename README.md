@@ -1,5 +1,5 @@
 # ☕️ Coffee Shop Website
-🌐 Live Demo: (coming soon)
+🌐 Live Demo: https://nikolinnav.github.io/CoffeeShop/
 
 ## About the project
 A cozy corner of the internet for coffee lovers - built to practice frontend fundamentals and make visitors want a latte. From glassmorphism header to the mobile-friendly navigation bar, every detail was crafted with care. 
