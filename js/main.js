@@ -86,3 +86,7 @@ navItems.forEach(item => {
     });
 });
 
+// Prevent page reload when clicking on the submit button in the contact form
+document.querySelector(".btn-submit").addEventListener("click", (e) => {
+    e.preventDefault();
+});
